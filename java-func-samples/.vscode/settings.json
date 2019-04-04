@@ -1,0 +1,7 @@
+{
+  "azureFunctions.projectRuntime": "~2",
+  "azureFunctions.projectLanguage": "Java",
+  "azureFunctions.deploySubpath": "target/azure-functions/damoo-java-func/",
+  "azureFunctions.preDeployTask": "package",
+  "debug.internalConsoleOptions": "neverOpen"
+}

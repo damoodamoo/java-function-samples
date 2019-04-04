@@ -1,20 +1,20 @@
 # Azure Functions: Java Samples
 This repo contains a number of basic samples of Functions written in Java to get you started. 
 
-It also contains a few basic unit tests and an integration test to exercise some basic Functions and give you some jumping-off points.
+It also contains a few basic [unit tests and an integration test](/java-func-samples/src/test/java/com/damoo/samples) to exercise some basic Functions and give you some jumping-off points.
 
 It includes...
 
 | Function | Trigger | Input | Output Binding(s) |
 |--|--|--|--|
-| **HttpFunc** | HttpTrigger | HttpRequestMessage | - |
-| **BlobTriggerOutput** | BlobTrigger | byte[] from trigger | Blob |
-| **CosmosFunc** | CosmosTrigger | POJO from trigger | CosmosOutput|
-| **ServiceBusProducerFunc** | HttpTrigger | POJO from Http Post | ServiceBusOutput |
-| **ServiceBusConsumerFunc** | ServiceBusTrigger | POJO from trigger | ServiceBusOutput |
-| **StorageTableQueue** | HttpTrigger | POJO from Http | StroageOutput / TableOutput
-| **EventGridFunc** | EventGridTrigger | POJO from event grid trigger | CosmosOutput |
-| **HttpKeyVaultFunc** | HttpTrigger | - | (gets arbritrary value from Key Vault)
+| [**HttpFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpFunc.java) | HttpTrigger | HttpRequestMessage | - |
+| [**BlobTriggerOutput**](/java-func-samples/src/main/java/com/damoo/samples/BlobTriggerOutput.java) | BlobTrigger | byte[] from trigger | Blob |
+| [**CosmosFunc**](/java-func-samples/src/main/java/com/damoo/samples/CosmosFunc.java) | CosmosTrigger | POJO from trigger | CosmosOutput|
+| [**ServiceBusProducerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusProducerFunc.java) | HttpTrigger | POJO from Http Post | ServiceBusOutput |
+| [**ServiceBusConsumerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusConsumerFunc.java) | ServiceBusTrigger | POJO from trigger | ServiceBusOutput |
+| [**StorageTableQueue**](/java-func-samples/src/main/java/com/damoo/samples/StorageTableQueueFunc.java) | HttpTrigger | POJO from Http | StroageOutput / TableOutput
+| [**EventGridFunc**](/java-func-samples/src/main/java/com/damoo/samples/EventGridFunc.java) | EventGridTrigger | POJO from event grid trigger | CosmosOutput |
+| [**HttpKeyVaultFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpKeyVaultFunc.java) | HttpTrigger | - | (gets arbritrary value from Key Vault)
 
 > **NOTE** - currently the `EventGridFunc` fails when calling it when deployed to Azure. See note in comment.
 

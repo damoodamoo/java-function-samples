@@ -12,6 +12,8 @@ It includes...
 | [**CosmosFunc**](/java-func-samples/src/main/java/com/damoo/samples/CosmosFunc.java) | CosmosTrigger | POJO from trigger | CosmosOutput|
 | [**ServiceBusProducerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusProducerFunc.java) | HttpTrigger | POJO from Http Post | ServiceBusOutput |
 | [**ServiceBusConsumerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusConsumerFunc.java) | ServiceBusTrigger | POJO from trigger | ServiceBusOutput |
+| [**ServiceBusTopicProducerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusTopicProducerFunc.java) | HttpTrigger | POJO from Http Post | ServiceBusTopicOutput |
+| [**ServiceBusTopicConsumerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusTopicConsumerFunc.java) | ServiceBusTopicTrigger | POJO from trigger | ServiceBusTopicOutput |
 | [**StorageTableQueue**](/java-func-samples/src/main/java/com/damoo/samples/StorageTableQueueFunc.java) | HttpTrigger | POJO from Http | StroageOutput / TableOutput
 | [**EventGridFunc**](/java-func-samples/src/main/java/com/damoo/samples/EventGridFunc.java) | EventGridTrigger | POJO from event grid trigger | CosmosOutput |
 | [**HttpKeyVaultFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpKeyVaultFunc.java) | HttpTrigger | - | (gets arbritrary value from Key Vault)

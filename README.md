@@ -1,6 +1,8 @@
 # Azure Functions: Java Samples
 This repo contains a number of basic samples of Functions written in Java to get you started. 
 
+> **NOTE** The samples provided here are just that, *samples*. They are not ready to be used straight in production, but are intented to get you started with some of the terminology and structure.
+
 It also contains a few basic [unit tests and an integration test](/java-func-samples/src/test/java/com/damoo/samples) to exercise some basic Functions and give you some jumping-off points.
 
 It includes...
@@ -17,9 +19,8 @@ It includes...
 | [**StorageTableQueue**](/java-func-samples/src/main/java/com/damoo/samples/StorageTableQueueFunc.java) | HttpTrigger | POJO from Http | StorageOutput / TableOutput
 | [**EventGridFunc**](/java-func-samples/src/main/java/com/damoo/samples/EventGridFunc.java) | EventGridTrigger | POJO from event grid trigger | CosmosOutput |
 | [**HttpKeyVaultFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpKeyVaultFunc.java) | HttpTrigger | - | (gets arbritrary value from Key Vault) 
-| [**BlobTriggeredOCR**](/java-func-samples/src/main/java/com/damoo/samples/BlobTriggeredOCR.java) | BlobTrigger | byte[] from trigger | JSON OCR data for incoming Blob
-
-> **NOTE** - currently the `EventGridFunc` fails when calling it when deployed to Azure. See note in comment.
+| [**BlobTriggeredOCR**](/java-func-samples/src/main/java/com/damoo/samples/BlobTriggeredOCR.java) | BlobTrigger | byte[] from trigger | JSON OCR data for incoming Blob |
+| [**TimerQueueMonitorFunc.java**](/java-func-samples/src/main/java/com/damoo/samples/TimerQueueMonitorFunc.java) | TimerTrigger | - | Logs metrics to AppInsights |
 
 ## Local Settings
 The following local / app settings are used: *(local storage and Cosmos emulators used in dev)*
@@ -41,7 +42,8 @@ The following local / app settings are used: *(local storage and Cosmos emulator
     "SBOutputQueue": "out-queue",
     "StorageAccount": "UseDevelopmentStorage=true",
     "StorageTableName": "outtable",
-    "StorageQueueName": "outqueue"
+    "StorageQueueName": "outqueue",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "app-insights-key"
   }
 }
 ```

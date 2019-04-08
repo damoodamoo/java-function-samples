@@ -10,9 +10,7 @@ import com.microsoft.azure.functions.*;
  */
 public class EventGridFunc {
     /**
-     * CURRENTLY NOT WORKING WHEN DEPLOYED- "[Error] Executed 'Functions.EventGridFunc' (Failed, Id=93355eed-dac2-410e-b5e1-209ffba9609b)
-        Format of the initialization string does not conform to specification starting at index 0."
-        - https://github.com/Azure/azure-functions-java-worker/issues/247
+     * Functions fired from event grid, dumps output to Cosmos DB collection
      */
     @FunctionName("EventGridFunc")
     public void run(
@@ -29,6 +27,6 @@ public class EventGridFunc {
 
         outputObj.setValue(evt);
         
-        context.getLogger().info("Java Event Grid trigger function executed.");        
+        context.getLogger().info(evt.topic);        
     }
 }

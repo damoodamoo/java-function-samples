@@ -16,7 +16,8 @@ It includes...
 | [**ServiceBusTopicConsumerFunc**](/java-func-samples/src/main/java/com/damoo/samples/ServiceBusTopicConsumerFunc.java) | ServiceBusTopicTrigger | POJO from trigger | ServiceBusTopicOutput |
 | [**StorageTableQueue**](/java-func-samples/src/main/java/com/damoo/samples/StorageTableQueueFunc.java) | HttpTrigger | POJO from Http | StorageOutput / TableOutput
 | [**EventGridFunc**](/java-func-samples/src/main/java/com/damoo/samples/EventGridFunc.java) | EventGridTrigger | POJO from event grid trigger | CosmosOutput |
-| [**HttpKeyVaultFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpKeyVaultFunc.java) | HttpTrigger | - | (gets arbritrary value from Key Vault)
+| [**HttpKeyVaultFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpKeyVaultFunc.java) | HttpTrigger | - | (gets arbritrary value from Key Vault) 
+| [**BlobTriggeredOCR**](/java-func-samples/src/main/java/com/damoo/samples/BlobTriggeredOCR.java) | BlobTrigger | byte[] from trigger | JSON OCR data for incoming Blob
 
 > **NOTE** - currently the `EventGridFunc` fails when calling it when deployed to Azure. See note in comment.
 

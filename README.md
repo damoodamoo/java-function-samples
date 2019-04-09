@@ -43,6 +43,7 @@ The following local / app settings are used: *(local storage and Cosmos emulator
     "StorageAccount": "UseDevelopmentStorage=true",
     "StorageTableName": "outtable",
     "StorageQueueName": "outqueue",
+    "ComputerVisionSubscriptionKey": "computer-vision-key",
     "APPINSIGHTS_INSTRUMENTATIONKEY": "app-insights-key"
   }
 }

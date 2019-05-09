@@ -21,7 +21,7 @@ It includes...
 | [**HttpKeyVaultFunc**](/java-func-samples/src/main/java/com/damoo/samples/HttpKeyVaultFunc.java) | HttpTrigger | - | (gets arbritrary value from Key Vault) 
 | [**BlobTriggeredOCR**](/java-func-samples/src/main/java/com/damoo/samples/BlobTriggeredOCR.java) | BlobTrigger | byte[] from trigger | JSON OCR data for incoming Blob |
 | [**TimerQueueMonitorFunc.java**](/java-func-samples/src/main/java/com/damoo/samples/TimerQueueMonitorFunc.java) | TimerTrigger | - | Logs metrics to AppInsights |
-
+| [**PostgresCreateJDBC.java**](/java-func-samples/src/main/java/com/damoo/samples/PostgresCreateJDBC.java) | HttpTrigger | - | Sends a row of data to Postgres via JDBC |
 ## Local Settings
 The following local / app settings are used: *(local storage and Cosmos emulators used in dev)*
 ```JSON
@@ -44,7 +44,10 @@ The following local / app settings are used: *(local storage and Cosmos emulator
     "StorageTableName": "outtable",
     "StorageQueueName": "outqueue",
     "ComputerVisionSubscriptionKey": "computer-vision-key",
-    "APPINSIGHTS_INSTRUMENTATIONKEY": "app-insights-key"
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "app-insights-key",
+    "JDBCUrl": "jdbc:postgresql://hostname-of-db-server/db-name",
+    "DBUsername" : "db-username",
+    "DBPassword": "db-password"
   }
 }
 ```
